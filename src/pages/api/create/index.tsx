@@ -18,17 +18,10 @@ const CreateAPI = () => {
       <p className="text-gray-600 mb-8">Export worker functions as a REST API</p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="grid grid-cols-3 gap-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Project</label>
-            <div className="flex items-center border border-gray-200 rounded px-3 py-2 bg-gray-50">
-              <span className="text-gray-600">dummy</span>
-            </div>
-          </div>
+        <div className="grid  gap-4">
           <div className="col-span-2">
             <label className="block text-sm font-medium text-gray-700 mb-1">API Name</label>
             <div className="flex items-center">
-              <span className="text-gray-500 mr-2">/</span>
               <input
                 type="text"
                 value={apiName}

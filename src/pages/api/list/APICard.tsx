@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Share2 } from 'lucide-react';
 
 interface APICardProps {
   name: string;
@@ -20,7 +19,6 @@ const APICard = ({ name, version, routes }: APICardProps) => {
         <h3 className="text-lg font-medium">{name}</h3>
         <div className="flex items-center gap-2">
           <span className="px-2 py-1 bg-gray-100 rounded text-sm">{version}</span>
-          <Share2 className="h-4 w-4 text-gray-400" />
         </div>
       </div>
       <div className="flex items-center text-sm text-gray-600">

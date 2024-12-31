@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Plus } from 'lucide-react';
-import APILeftNav from '../components/api/APILeftNav';
+import APILeftNav from './APILeftNav';
 
 const APIDetails = () => {
   const { apiName } = useParams();

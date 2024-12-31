@@ -4,10 +4,10 @@ import Navbar from './components/Navbar';
 import Overview from './pages/overview';
 import Components from './pages/components';
 import CreateComponent from './pages/components/create';
-import APIs from './pages/APIs';
-import CreateAPI from './pages/CreateAPI';
-import APIDetails from './pages/APIDetails';
-import CreateRoute from './pages/api/CreateRoute';
+import {APIs} from './pages/api/index';
+import CreateAPI from './pages/api/create';
+import APIDetails from './pages/api/details';
+import CreateRoute from './pages/api/details/CreateRoute';
 import Deployments from './pages/Deployments';
 
 function App() {

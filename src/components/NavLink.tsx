@@ -8,7 +8,7 @@ interface NavLinkProps {
 
 const NavLink = ({ to, children }: NavLinkProps) => {
   const location = useLocation();
-  const isActive = to !== "/" ? location.pathname.includes(to) : location.pathname === to ;
+  const isActive = location.pathname === to || location.pathname.startsWith(to + "/");
 
   return (
     <Link

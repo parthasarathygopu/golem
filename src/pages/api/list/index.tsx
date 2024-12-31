@@ -1,9 +1,9 @@
 import React from 'react';
 import { Plus, Search } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import APICard from '../components/api/APICard';
+import APICard from './APICard';
 
-const APIs = () => {
+export const APIs = () => {
   const navigate = useNavigate();
 
   return (
@@ -26,7 +26,7 @@ const APIs = () => {
         </button>
       </div>
 
-      <div className="grid gap-4">
+      <div className="grid grid-cols-3 gap-6">
         <APICard
           name="vvvvv"
           version="0.1.0"
@@ -37,4 +37,3 @@ const APIs = () => {
   );
 };
 
-export default APIs;
